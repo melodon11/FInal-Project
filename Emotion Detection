@@ -5,6 +5,8 @@ app = Flask("Emotion Detector")
 
 @app.route("/EmotionDetector")
 def emotion_detector_function
+... This function calls the application
+...
 test_to_analyze = request.args.get('texttoAnaylze')
 response = emotion_detector(text_to_analyze)
 
@@ -21,6 +23,8 @@ return response text
 
 @app route("\")
 def render_index_page():
+...This is the function to render the html reference
+...
 return render_template('index.html')
 
 if_name_ == "_main_":
